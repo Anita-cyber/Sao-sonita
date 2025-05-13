@@ -65,38 +65,65 @@
             padding-inline: 20px;
             padding-block: 10px;
         }    
-        @media screen and (max-width: 1200px) {
+        @media only screen and (max-width: 1200px) {
             #hero-section {
-                padding-inline: 20%;
-            }
+                padding-inline: 10%;
+        }
+
             #hero-section img {
                 width: 400px;
-            }
-            #hero-section h1 {
-                font-size: 70px
-            }
         }
-        @media screen and (max-width: 768px) {
+
+            #hero-section h1 {
+                font-size: 50px;
+        }
+        }
+
+        @media only screen and (max-width: 768px) {
             nav ul {
-                display: none;
-            }
-            #hero-section {
-                display: block;
-                padding-inline: 10%;
-                padding-block: 50px;
-            }
-            #hero-section h1 {
-                font-size: 20px;
-            }
-            #hero-section p {
-                font-size: 20px;
-            }
-        }   
-            #hero-section {
-                width:50%;
+            display: none;
         }
-            #hero-section img {
-            width: 50%;
+
+            nav #bar {
+            display: block;
+        }
+
+        #hero-section {
+        display: block;
+        padding-inline: 10%;
+        padding-block: 50px;
+        }
+
+        #hero-section h1 {
+        font-size: 40px;
+        }
+        }
+       @media only screen and (max-width: 480px) {
+        * {
+        font-size: 14px;
+        }
+
+        #hero-section {
+        padding-inline: 5%;
+        padding-block: 30px;
+        }
+
+        #hero-section h1 {
+        font-size: 24px;
+        }
+
+        #hero-section img {
+        width: 100%;
+        height: auto;
+        }
+
+        nav ul {
+        display: none;
+        }
+
+        nav #bar {
+        display: block;
+        }
         }
         
     </style>
@@ -123,7 +150,7 @@
        
         <img src="https://i.pinimg.com/736x/22/82/d8/2282d89b12fa73d60fbc6c73ae3aad24.jpg" alt=""> 
         <div>
-        <h1>Turning Vision Into <br> Reality With Code <br> And Design</h1>
+        <h1>Turning Vision Into Reality With Code And Design</h1>
         <p>I'm a front-end developer specializing in building (and occasionallyt designing) exceptional digital experiences</p>
         <button>Resume <i class="fa-solid fa-arrow-up-right-from-square"></i></button>
         <a href="">Contact</a>
